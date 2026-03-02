@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ヒアリング1回で完成する、AI活用HP製作。従来の10倍速で、HPを1週間でリニューアル！">
+  <title>1 week HP リニューアルサービス | AI活用WEB制作</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header-container">
+      <a href="#" class="header-logo">
+        <span class="logo-text">1WEEKHP</span><span class="logo-dot">.</span>
+      </a>
+
+      <!--Desktop Nav -->
+      <nav class="nav-desktop">
+        <a href="#problems" class="nav-link">課題と解決策</a>
+        <a href="#timeline" class="nav-link">製作期間</a>
+        <a href="#pricing" class="nav-link">料金</a>
+        <a href="#flow" class="nav-link">導入の流れ</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <a href="#" class="header-logo">
+        <span class="logo-text">1WEEKHP</span><span class="logo-dot">.</span>
+      </a>
+      <button class="close-btn" id="close-menu" aria-label="閉じる">
+        <span class="close-x-line close-x-line-1"></span>
+        <span class="close-x-line close-x-line-2"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#problems" class="mobile-nav-link">課題と解決策</a>
+      <a href="#timeline" class="mobile-nav-link">製作期間</a>
+      <a href="#pricing" class="mobile-nav-link">料金</a>
+      <a href="#flow" class="mobile-nav-link">導入の流れ</a>
+      <a href="#contact" class="mobile-nav-btn">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-subtitle animate-fade-in-up" style="animation-delay: 0.2s;">AIによる、HPリニューアルのご提案</p>
+        <h1 class="hero-title animate-fade-in-up" style="animation-delay: 0.4s;">
+          AI駆動による<br>革新的なWEB制作の実現。
+        </h1>
+        <p class="hero-lead animate-fade-in-up" style="animation-delay: 0.6s;">
+          ヒアリング1回で完成する、AI駆動WEB制作
+        </p>
+        <p class="hero-description animate-fade-in-up" style="animation-delay: 0.7s;">
+          従来の10倍速!? WEBサイトを1週間でリニューアル！
+        </p>
+
+        <!-- Before / After Block -->
+        <div class="hero-comparison animate-fade-in-up" style="animation-delay: 0.9s;">
+          <!-- BEFORE -->
+          <div class="comparison-card comparison-before">
+            <p class="comparison-label">Before</p>
+            <p class="comparison-text">
+              お客様が必要な情報が探しにくい<br>
+              デザイン性が低い
+            </p>
+          </div>
+          <!-- AFTER -->
+          <div class="comparison-card comparison-after">
+            <p class="comparison-label">After</p>
+            <p class="comparison-text">
+              洗練されたデザインで<br>
+              機能性も高い
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <a href="#problems">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section id="problems" class="problems-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <p class="section-label">Problems &amp; Solutions</p>
+          <h2 class="section-title">HP製作の課題と解決策</h2>
+          <p class="section-description">
+            従来のHP制作にかけていたコストや労力を、大幅に圧縮して実行します
+          </p>
+        </div>
+
+        <!-- Problems Grid -->
+        <div class="problems-grid">
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="problem-title">時間の課題</h3>
+            <p class="problem-description">
+              要件定義に膨大な時間をとられる上に、初稿が出るまで数か月…
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="problem-title">イメージの課題</h3>
+            <p class="problem-description">
+              思っていた出来と違う…けどもう直せない…
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="problem-title">コストの課題</h3>
+            <p class="problem-description">
+              細かい仕様追加が必要になり、どんどんコスト追加…
+            </p>
+          </div>
+        </div>
+
+        <!-- Transition Message -->
+        <div class="transition-message">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+          <p class="transition-text">1 Week HPなら、すべての課題を解決！</p>
+        </div>
+
+        <!-- Solutions Grid -->
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <p class="solution-lead">
+              たった1回のヒアリングでデザインを完成。
+            </p>
+            <p class="solution-result">検討リソースを大幅に圧縮</p>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <p class="solution-lead">
+              関係者全員でプロトタイプを見て、その場で修正が可能。
+            </p>
+            <p class="solution-result">イメージどおりの完成度に</p>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <p class="solution-lead">
+              画面遷移も見ながら、必要な要件を検討し、追加可能。
+            </p>
+            <p class="solution-result">開発段階で要件が明確に</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <p class="section-label">Timeline</p>
+          <h2 class="section-title">圧倒的な製作期間短縮</h2>
+          <p class="section-des cription">
+            「製作特化型AIツール活用」×「一気通貫の開発体制」で
+            高品質なWEBサイト製作を短期間・低コストで提供
+          </p>
+        </div>
+
+        <!-- Conventional Timeline -->
+        <div class="timeline-box timeline-conventional">
+          <div class="timeline-box-header">
+            <span class="timeline-badge timeline-badge-conventional">従来型製作の場合</span>
+            <span class="timeline-duration">計：約半年</span>
+          </div>
+
+          <!-- Steps -->
+          <div class="timeline-steps">
+            <div class="timeline-step">
+              <p class="timeline-step-label">要件定義</p>
+              <p class="timeline-step-duration">約2ヶ月</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">ワイヤーフレーム作成</p>
+              <p class="timeline-step-duration">0.5ヶ月</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">デザイン初稿</p>
+              <p class="timeline-step-duration">0.5ヶ月</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">修正対応</p>
+              <p class="timeline-step-duration">数ラウンド</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">実装</p>
+              <p class="timeline-step-duration">1ヶ月</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">公開</p>
+              <p class="timeline-step-duration">計：約半年</p>
+            </div>
+          </div>
+
+          <!-- Issues -->
+          <div class="timeline-issues">
+            <div class="timeline-issue">
+              <span class="timeline-issue-icon">⚠</span>
+              <p>文字ベースなので時間がかかる上に認識ずれが発生しやすい</p>
+            </div>
+            <div class="timeline-issue">
+              <span class="timeline-issue-icon">⚠</span>
+              <p>初めてデザインを見て、"これじゃない"感、大量の戻しが発生</p>
+            </div>
+            <div class="timeline-issue">
+              <span class="timeline-issue-icon">⚠</span>
+              <p>修正結果のレビューが大量に発生…</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1 Week Timeline -->
+        <div class="timeline-box timeline-week">
+          <div class="timeline-box-header">
+            <span class="timeline-badge timeline-badge-week">1 week HPリニューアル</span>
+            <span class="timeline-duration">計：1週間</span>
+          </div>
+
+          <!-- Steps -->
+          <div class="timeline-steps">
+            <div class="timeline-step">
+              <p class="timeline-step-label">ヒアリング</p>
+              <p class="timeline-step-duration">1日</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">デザイン</p>
+              <p class="timeline-step-duration">即日〜数日</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">デザイン確定</p>
+              <p class="timeline-step-duration">数日</p>
+            </div>
+            <svg class="timeline-arrow" width="16"  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">実装</p>
+              <p class="timeline-step-duration">数日</p>
+            </div>
+            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="timeline-step">
+              <p class="timeline-step-label">公開</p>
+              <p class="timeline-step-duration">計：１週間</p>
+            </div>
+          </div>
+
+          <!-- Merits -->
+          <div class="timeline-merits">
+            <div class="timeline-merit">
+              <span class="timeline-merit-icon">✓</span>
+              <p>目的やターゲット、戦略を会話ベースで確認。その場でワイヤを見える化。</p>
+            </div>
+            <div class="timeline-merit">
+              <span class="timeline-merit-icon">✓</span>
+              <p>デザインのイメージが違った場合にその場で修正したり、"動き"まで確認可能に。</p>
+            </div>
+            <div class="timeline-merit">
+              <span class="timeline-merit-icon">✓</span>
+              <p>デザインの認識ずれがゼロになるため、修正結果レビューはほぼなし。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI SEO Section -->
+    <section id="aiseo" class="aiseo-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <p class="section-label">AI SEO</p>
+          <h2 class="section-title">
+            これからのWebサイトに求められる<br>
+            「AI検索」への対応
+          </h2>
+          <p class="section-description">
+            Google検索だけでなく、ChatGPTなどのAIからも選ばれる情報源へ
+          </p>
+        </div>
+
+        <!-- Paradigm Shift - 3 columns -->
+        <div class="paradigm-grid">
+          <!-- Left: Traditional SEO -->
+          <div class="paradigm-card paradigm-traditional">
+            <div class="paradigm-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </div>
+            <h3 class="paradigm-title">
+              従来のGoogle検索対策(SEO)
+            </h3>
+            <p class="paradigm-description">
+              人が見ることを前提とした最適化
+            </p>
+          </div>
+
+          <!-- Center: Paradigm Shift -->
+          <div class="paradigm-card paradigm-shift">
+            <div class="paradigm-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+            <h3 class="paradigm-title">
+              検索のパラダイムシフト
+            </h3>
+            <p class="paradigm-description">
+              構造化データ(AIO/AIEO)が鍵
+            </p>
+          </div>
+
+          <!-- Right: AI SEO -->
+          <div class="paradigm-card paradigm-ai">
+            <div class="paradigm-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                <circle cx="12" cy="5" r="2"></circle>
+                <path d="M12 7v4"></path>
+                <line x1="8" y1="16" x2="8" y2="16"></line>
+                <line x1="16" y1="16" x2="16" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="paradigm-title">
+              AI検索・対話型AI対策(AIO/AIEO)
+            </h3>
+            <p class="paradigm-description">
+              AIが理解・学習しやすい構造化での最適化が必要
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Message -->
+        <div class="aiseo-message">
+          <p>
+            AIが学習しやすい構造化されたウェブサイト構築（AIO/AIEO対応）が、これからの時代の必須要件です。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CMS Section -->
+    <section id="cms" class="cms-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <p class="section-label">CMS</p>
+          <h2 class="section-title">誰でも簡単にWEB更新</h2>
+          <p class="section-description">
+            表示の仕組みと更新の仕組みを分けた、最新CMSを採用。専門知識がなくても、チャットで指示するだけでサイトを更新可能に。内製化により、運用コスト削減が期待できます。
+          </p>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="cms-visual">
+          <div class="cms-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <p class="cms-placeholder-title">チャットUIでサイトを簡単更新</p>
+            <p class="cms-placeholder-text">
+              ※ チャットで指示するだけでデザインテーマ変更などが可能なイメージ画像が入ります
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <p class="section-label">Pricing</p>
+          <h2 class="section-title">料金プラン</h2>
+        </div>
+
+        <!-- Plan Cards -->
+        <div class="pricing-grid">
+          <!-- Plan 1: Initial Cost -->
+          <div class="pricing-card">
+            <p class="pricing-badge">Initial</p>
+            <h3 class="pricing-card-title">初期費用（構築）</h3>
+            <p class="pricing-price">40万円〜</p>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>事業戦略策定</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>コンテンツ/デザイン作成</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>実装〜公開</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>CMS構築(50万円)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>データ移行費(別途算出)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Plan 2: Monthly Cost -->
+          <div class="pricing-card pricing-card-featured">
+            <p class="pricing-badge">Monthly</p>
+            <h3 class="pricing-card-title">月額費用（サイト運用）</h3>
+            <p class="pricing-price">月額 数万円〜</p>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>サーバー費用</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>AI CMS 利用ライセンス</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>技術サポート</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>保守メンテナンス</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Plan 3: Option -->
+          <div class="pricing-card">
+            <p class="pricing-badge">Option</p>
+            <h3 class="pricing-card-title">オプション：運用代行サービス</h3>
+            <div class="pricing-option-content">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <p>
+                更新作業が面倒な場合、チャットで依頼するだけで弊社が更新を代行します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow Section -->
+    <section id="flow" class="flow-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <p class="section-label">Flow</p>
+          <h2 class="section-title">導入までの流れ</h2>
+        </div>
+
+        <!-- Steps -->
+        <div class="flow-steps">
+          <div class="flow-step">
+            <span class="flow-number">01</span>
+            <div class="flow-content">
+              <h3 class="flow-title">ご要望確認</h3>
+              <p class="flow-description">ご支援範囲のご要望をヒアリング</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-number">02</span>
+            <div class="flow-content">
+              <h3 class="flow-title">お申込み/契約</h3>
+              <p class="flow-description">当社よりお見積りを提出後、ご契約</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-number">03</span>
+            <div class="flow-content">
+              <h3 class="flow-title">サイト構築</h3>
+              <p class="flow-description">
+                ヒアリングMTGの上でデザイン案提示。修正ご要望をもとに最終化のうえ、実装
+              </p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-number">04</span>
+            <div class="flow-content">
+              <h3 class="flow-title">運用開始</h3>
+              <p class="flow-description">
+                サイトオープン後、効果測定の上、月次でご報告。必要に応じ、改善提案も実施
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Note Badge -->
+        <div class="flow-note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+          </svg>
+          <p>すべて専任の営業担当者がサポートいたします</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <p class="section-label">Support</p>
+          <h2 class="section-title">ご支援体制</h2>
+          <p class="section-description">
+            マーケティング力と技術力の両輪で、貴社を支援いたします。
+          </p>
+        </div>
+
+        <!-- Two blocks -->
+        <div class="support-grid">
+          <!-- Marketing -->
+          <div class="support-card">
+            <div class="support-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="support-title">
+              マーケティング支援で培った、ユーザー理解とコンテンツ開発力
+            </h3>
+            <ul class="support-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>ヒアリング</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>文言・構成案</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>プロトタイプ作成</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Figmaデザイン</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>素材編集</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>各種MTGのリード</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tech -->
+          <div class="support-card">
+            <div class="support-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="support-title">
+              要望通りの実装を可能にする技術力
+            </h3>
+            <ul class="support-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>HTML/CSS/JS実装</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>SEO初期設定</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>公開作業</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>WordPress/CMS構築</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>サーバー設定</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <!--CTA Section -->
+    <div class="footer-cta">
+      <div class="container footer-cta-content">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">
+          AIによるWEB制作の第一歩を、<br>
+          一緒に踏み出しませんか？
+        </h2>
+        <a href="mailto:contact@nextech.example.com" class="btn-cta">
+          お問い合わせ
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 7h10v10"></path>
+            <path d="M7 17 17 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container footer-content">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <p class="footer-logo">
+            1WEEKHP<span class="logo-dot">.</span>
+          </p>
+          <p class="footer-brand-text">
+            ヒアリング1回で完成する、<br>
+            AI活用WEB制作サービス。
+          </p>
+        </div>
+
+        <!-- Link columns -->
+        <div class="footer-links-col">
+          <p class="footer-links-title">Menu</p>
+          <ul class="footer-links-list">
+            <li><a href="#problems">課題と解決策</a></li>
+            <li><a href="#timeline">製作期間</a></li>
+            <li><a href="#pricing">料金プラン</a></li>
+            <li><a href="#flow">導入の流れ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 1WEEKHP. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
