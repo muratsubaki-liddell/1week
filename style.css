@@ -10,8 +10,8 @@
   --color-text-main: #000000;
   --color-text-sub: #666666;
   --color-border: #E5E7EB;
-  --font-sans: 'Noto Sans JP', sans-serif;
-  --font-montserrat: 'Montserrat', sans-serif;
+  --font-sans: '游ゴシック', 'Yu Gothic', 'YuGothic', sans-serif;
+  --font-montserrat: 'Cal Sans', sans-serif;
 }
 
 /* ============================================
@@ -286,22 +286,18 @@ img {
   justify-content: center;
   min-height: 100vh;
   overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80');
+  background-image: url('public/img/top.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.hero-bg::after {
+.hero-section::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
 }
 
 .hero-content {
@@ -309,7 +305,7 @@ img {
   z-index: 10;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 8rem 1.5rem;
+  padding: 10rem 1.5rem;
   text-align: center;
 }
 
@@ -324,23 +320,24 @@ img {
 }
 
 .hero-title {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: white;
+  margin-bottom: 2rem;
+  font-family: var(--font-montserrat);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
-@media (min-width: 640px) {
-  .hero-title {
-    font-size: 3rem;
-  }
+.hero-title-line1 {
+  display: block;
+  font-size: clamp(3.8rem, 11vw, 9rem);
+  color: #ffffff;
 }
 
-@media (min-width: 1024px) {
-  .hero-title {
-    font-size: 4rem;
-  }
+.hero-title-line2 {
+  display: block;
+  font-size: clamp(3.8rem, 11vw, 9rem);
+  color: #ffffff;
 }
 
 .hero-lead {
@@ -362,6 +359,40 @@ img {
   font-size: 0.875rem;
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dot Navigation */
+.dot-nav {
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dot-nav-item {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgb(230 230 230 / 55%);
+  transition: background 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.dot-nav-item.active {
+  background: #e53e3e;
+  border-color: #e53e3e;
+  transform: scale(1.15);
+}
+
+@media (max-width: 767px) {
+  .dot-nav {
+    display: none;
+  }
 }
 
 /* Hero Comparison */

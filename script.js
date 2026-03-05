@@ -113,3 +113,31 @@ const statItems = document.querySelectorAll('.stat-item');
 statItems.forEach((item, index) => {
   item.style.transitionDelay = `${0.2 + index * 0.1}s`;
 });
+
+// ============================================
+// Dot Navigation
+// ============================================
+(function () {
+  const dotItems = document.querySelectorAll('.dot-nav-item');
+  const sectionIds = ['hero', 'problems', 'timeline', 'aiseo', 'cms', 'pricing', 'flow', 'support'];
+  const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+  function setActive(id) {
+    dotItems.forEach(dot => {
+      dot.classList.toggle('active', dot.dataset.section === id);
+    });
+  }
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setActive(entry.target.id);
+      }
+    });
+  }, { root: null, rootMargin: '-40% 0px -40% 0px', threshold: 0 });
+
+  sections.forEach(sec => sectionObserver.observe(sec));
+
+  // Set first dot active on load
+  if (sections.length) setActive(sections[0].id);
+})();
