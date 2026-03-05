@@ -349,7 +349,7 @@ img {
 
 @media (min-width: 640px) {
   .hero-lead {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -393,67 +393,6 @@ img {
   .dot-nav {
     display: none;
   }
-}
-
-/* Hero Comparison */
-.hero-comparison {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  max-width: 48rem;
-  margin: 0 auto;
-}
-
-@media (min-width: 640px) {
-  .hero-comparison {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.comparison-card {
-  border-radius: 1rem;
-  padding: 2rem;
-  backdrop-filter: blur(8px);
-}
-
-.comparison-before {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.comparison-after {
-  border: 2px solid var(--color-accent);
-  background: rgba(230, 0, 18, 0.1);
-}
-
-.comparison-label {
-  margin-bottom: 1rem;
-  font-family: var(--font-montserrat);
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-}
-
-.comparison-before .comparison-label {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.comparison-after .comparison-label {
-  color: var(--color-accent);
-}
-
-.comparison-text {
-  font-size: 1.125rem;
-  line-height: 1.75;
-}
-
-.comparison-before .comparison-text {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.comparison-after .comparison-text {
-  color: white;
 }
 
 /* Scroll Indicator */
@@ -595,7 +534,7 @@ img {
 .problem-icon {
   display: inline-flex;
   margin-bottom: 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: 2.75rem;
   background: rgba(255, 200, 200, 1);
   padding: 0.75rem;
   color: var(--color-accent);
@@ -610,6 +549,13 @@ img {
 .problem-description {
   line-height: 1.75;
   color: var(--color-text-sub);
+}
+
+.problem-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 /* Transition Message */
@@ -791,7 +737,7 @@ img {
 }
 
 .timeline-step-label {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   font-weight: 700;
 }
 
@@ -870,6 +816,116 @@ img {
   color: var(--color-text-sub);
 }
 
+/* Timeline rows — new vertical layout */
+.timeline-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 0 2rem;
+  position: relative;
+}
+
+.timeline-row-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem 0.75rem 1.5rem;
+  gap: 0.3rem;
+}
+
+.timeline-row-left::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  flex-shrink: 0;
+  order: -1;
+}
+
+.timeline-week .timeline-row-left::before {
+  background: var(--color-accent);
+  display: none;
+}
+
+.timeline-row-left--final::before {
+  width: 14px;
+  height: 14px;
+}
+
+.timeline-row:not(.timeline-row--last) .timeline-row-left::after {
+  display: none;
+}
+
+.timeline-week .timeline-row:not(.timeline-row--last) .timeline-row-left::after {
+  display: none;
+}
+
+.timeline-row-avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #DDD;
+  order: -1;
+}
+
+.timeline-step-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.timeline-step-duration {
+  font-family: var(--font-montserrat);
+  font-size: 0.72rem;
+  color: var(--color-text-sub);
+}
+
+.timeline-week .timeline-step-duration {
+  color: var(--color-accent);
+}
+
+.timeline-row-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.timeline-row--last .timeline-row-right {
+  border-bottom: none;
+}
+
+.timeline-row-icon {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  margin-top: 0.15rem;
+}
+
+.timeline-row-icon--bad  { color: #aaa; }
+.timeline-row-icon--good { color: var(--color-accent); }
+
+.timeline-row-right p {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: var(--color-text-sub);
+}
+
+@media (max-width: 639px) {
+  .timeline-row {
+    grid-template-columns: 6.5rem 1fr;
+    gap: 0 1rem;
+  }
+}
+
 /* ============================================
    AI SEO Section
    ============================================ */
@@ -919,6 +975,7 @@ img {
 .paradigm-shift {
   border: 2px solid rgba(230, 0, 18, 0.2);
   background: white;
+  justify-content: center;
 }
 
 .paradigm-ai {
@@ -946,6 +1003,12 @@ img {
   display: flex;
   margin-bottom: 1rem;
   color: var(--color-accent);
+}
+
+@media (max-width: 1023px) {
+  .paradigm-arrow {
+    transform: rotate(90deg);
+  }
 }
 
 .paradigm-title {
@@ -1089,7 +1152,7 @@ img {
 }
 
 .pricing-card-featured {
-  border: 2px solid var(--color-accent);
+  /* border: 2px solid var(--color-accent); */
 }
 
 .pricing-badge {

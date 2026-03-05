@@ -74,25 +74,7 @@
           従来の10倍速!? WEBサイトを1週間でリニューアル！
         </p>
 
-        <!-- Before / After Block -->
-        <div class="hero-comparison animate-fade-in-up" style="animation-delay: 0.9s;">
-          <!-- BEFORE -->
-          <div class="comparison-card comparison-before">
-            <p class="comparison-label">Before</p>
-            <p class="comparison-text">
-              お客様が必要な情報が探しにくい<br>
-              デザイン性が低い
-            </p>
-          </div>
-          <!-- AFTER -->
-          <div class="comparison-card comparison-after">
-            <p class="comparison-label">After</p>
-            <p class="comparison-text">
-              洗練されたデザインで<br>
-              機能性も高い
-            </p>
-          </div>
-        </div>
+        <!-- Before / After Block は別セクションへ移動 -->
       </div>
 
       <!-- Scroll indicator -->
@@ -130,6 +112,7 @@
             <p class="problem-description">
               要件定義に膨大な時間をとられる上に、初稿が出るまで数か月…
             </p>
+            <img src="public/img/img1.png" alt="時間の課題" class="problem-card-img">
           </div>
 
           <div class="problem-card">
@@ -143,6 +126,7 @@
             <p class="problem-description">
               思っていた出来と違う…けどもう直せない…
             </p>
+            <img src="public/img/img2.png" alt="イメージの課題" class="problem-card-img">
           </div>
 
           <div class="problem-card">
@@ -156,6 +140,7 @@
             <p class="problem-description">
               細かい仕様追加が必要になり、どんどんコスト追加…
             </p>
+            <img src="public/img/img3.png" alt="コストの課題" class="problem-card-img">
           </div>
         </div>
 
@@ -170,12 +155,7 @@
         <!-- Solutions Grid -->
         <div class="solutions-grid">
           <div class="solution-card">
-            <div class="solution-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-            </div>
+            <img src="public/img/img4.png" alt="ヒアリング1回で完成" class="problem-card-img">
             <p class="solution-lead">
               たった1回のヒアリングでデザインを完成。
             </p>
@@ -183,12 +163,7 @@
           </div>
 
           <div class="solution-card">
-            <div class="solution-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-            </div>
+            <img src="public/img/img5.png" alt="イメージどおりの完成度" class="problem-card-img">
             <p class="solution-lead">
               関係者全員でプロトタイプを見て、その場で修正が可能。
             </p>
@@ -196,12 +171,7 @@
           </div>
 
           <div class="solution-card">
-            <div class="solution-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-            </div>
+            <img src="public/img/img6.png" alt="開発段階で要件が明確に" class="problem-card-img">
             <p class="solution-lead">
               画面遷移も見ながら、必要な要件を検討し、追加可能。
             </p>
@@ -231,62 +201,66 @@
             <span class="timeline-duration">計：約半年</span>
           </div>
 
-          <!-- Steps -->
-          <div class="timeline-steps">
-            <div class="timeline-step">
-              <p class="timeline-step-label">要件定義</p>
-              <p class="timeline-step-duration">約2ヶ月</p>
+          <div class="timeline-rows">
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <p class="timeline-step-label">要件定義</p>
+                <p class="timeline-step-duration">約2ヶ月</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--bad">⚠</span>
+                <p>文字ベースのヒアリングシートで要件を整理。認識ずれが起きやすく、後工程での手戻りの原因になりやすい。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">ワイヤーフレーム作成</p>
-              <p class="timeline-step-duration">0.5ヶ月</p>
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <p class="timeline-step-label">ワイヤーフレーム作成</p>
+                <p class="timeline-step-duration">0.5ヶ月</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--bad">⚠</span>
+                <p>画面構成を別途ドキュメントで作成。担当者間の承認フローが長引き、スケジュールを圧迫しやすい。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">デザイン初稿</p>
-              <p class="timeline-step-duration">0.5ヶ月</p>
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <p class="timeline-step-label">デザイン初稿</p>
+                <p class="timeline-step-duration">0.5ヶ月</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--bad">⚠</span>
+                <p>初めてビジュアルを確認する段階。「これじゃない」感が発生しやすく、大量の戻しにつながるリスクがある。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">修正対応</p>
-              <p class="timeline-step-duration">数ラウンド</p>
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <p class="timeline-step-label">修正対応</p>
+                <p class="timeline-step-duration">数ラウンド</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--bad">⚠</span>
+                <p>デザイン・文言・構成の修正が複数ラウンド発生。そのたびにレビューと承認が必要で、期間が膨らむ。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">実装</p>
-              <p class="timeline-step-duration">1ヶ月</p>
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <p class="timeline-step-label">実装</p>
+                <p class="timeline-step-duration">1ヶ月</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--bad">⚠</span>
+                <p>デザイン確定後にコーディングを開始。テスト・動作検証も含めると長期化しやすく、コストも増大する。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">公開</p>
-              <p class="timeline-step-duration">計：約半年</p>
-            </div>
-          </div>
-
-          <!-- Issues -->
-          <div class="timeline-issues">
-            <div class="timeline-issue">
-              <span class="timeline-issue-icon">⚠</span>
-              <p>文字ベースなので時間がかかる上に認識ずれが発生しやすい</p>
-            </div>
-            <div class="timeline-issue">
-              <span class="timeline-issue-icon">⚠</span>
-              <p>初めてデザインを見て、"これじゃない"感、大量の戻しが発生</p>
-            </div>
-            <div class="timeline-issue">
-              <span class="timeline-issue-icon">⚠</span>
-              <p>修正結果のレビューが大量に発生…</p>
+            <div class="timeline-row timeline-row--last">
+              <div class="timeline-row-left timeline-row-left--final">
+                <p class="timeline-step-label">公開</p>
+                <p class="timeline-step-duration">計：約半年</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--bad">⚠</span>
+                <p>すべての工程を経てようやく公開。コスト・期間ともに当初想定を超えるケースが多い。</p>
+              </div>
             </div>
           </div>
         </div>
@@ -298,55 +272,61 @@
             <span class="timeline-duration">計：1週間</span>
           </div>
 
-          <!-- Steps -->
-          <div class="timeline-steps">
-            <div class="timeline-step">
-              <p class="timeline-step-label">ヒアリング</p>
-              <p class="timeline-step-duration">1日</p>
+          <div class="timeline-rows">
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <img src="public/img/imgc1.png" class="timeline-row-avatar" alt="">
+                <p class="timeline-step-label">ヒアリング</p>
+                <p class="timeline-step-duration">1日</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--good">✓</span>
+                <p>目的・ターゲット・戦略をオンライン会話形式で確認。その場でワイヤを可視化するため認識ずれゼロ。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">デザイン</p>
-              <p class="timeline-step-duration">即日〜数日</p>
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <img src="public/img/imgc2.png" class="timeline-row-avatar" alt="">
+                <p class="timeline-step-label">デザイン</p>
+                <p class="timeline-step-duration">即日〜数日</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--good">✓</span>
+                <p>AIツールを活用しデザインを高速生成。動きやインタラクションまでリアルタイムで確認・調整できる。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">デザイン確定</p>
-              <p class="timeline-step-duration">数日</p>
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <img src="public/img/imgc3.png" class="timeline-row-avatar" alt="">
+                <p class="timeline-step-label">デザイン確定</p>
+                <p class="timeline-step-duration">数日</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--good">✓</span>
+                <p>実際のビジュアルを見ながらフィードバックできるため、修正ラウンドはほぼ発生しない。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16"  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">実装</p>
-              <p class="timeline-step-duration">数日</p>
+            <div class="timeline-row">
+              <div class="timeline-row-left">
+                <img src="public/img/imgc4.png" class="timeline-row-avatar" alt="">
+                <p class="timeline-step-label">実装</p>
+                <p class="timeline-step-duration">数日</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--good">✓</span>
+                <p>AI支援コーディングで開発を爆速化。テスト・検証も含めて数日で完了し、コストを大幅に抑制。</p>
+              </div>
             </div>
-            <svg class="timeline-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <div class="timeline-step">
-              <p class="timeline-step-label">公開</p>
-              <p class="timeline-step-duration">計：１週間</p>
-            </div>
-          </div>
-
-          <!-- Merits -->
-          <div class="timeline-merits">
-            <div class="timeline-merit">
-              <span class="timeline-merit-icon">✓</span>
-              <p>目的やターゲット、戦略を会話ベースで確認。その場でワイヤを見える化。</p>
-            </div>
-            <div class="timeline-merit">
-              <span class="timeline-merit-icon">✓</span>
-              <p>デザインのイメージが違った場合にその場で修正したり、"動き"まで確認可能に。</p>
-            </div>
-            <div class="timeline-merit">
-              <span class="timeline-merit-icon">✓</span>
-              <p>デザインの認識ずれがゼロになるため、修正結果レビューはほぼなし。</p>
+            <div class="timeline-row timeline-row--last">
+              <div class="timeline-row-left timeline-row-left--final">
+                <img src="public/img/imgc5.png" class="timeline-row-avatar" alt="">
+                <p class="timeline-step-label">公開</p>
+                <p class="timeline-step-duration">計：1週間</p>
+              </div>
+              <div class="timeline-row-right">
+                <span class="timeline-row-icon timeline-row-icon--good">✓</span>
+                <p>すべての工程を最短1週間で完結。高品質なサイトがスピーディに手に入り、事業スタートを加速。</p>
+              </div>
             </div>
           </div>
         </div>
@@ -372,12 +352,7 @@
         <div class="paradigm-grid">
           <!-- Left: Traditional SEO -->
           <div class="paradigm-card paradigm-traditional">
-            <div class="paradigm-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.35-4.35"></path>
-              </svg>
-            </div>
+            <img src="public/img/img7.png" alt="従来のGoogle検索対策" class="problem-card-img">
             <h3 class="paradigm-title">
               従来のGoogle検索対策(SEO)
             </h3>
@@ -403,15 +378,7 @@
 
           <!-- Right: AI SEO -->
           <div class="paradigm-card paradigm-ai">
-            <div class="paradigm-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="10" rx="2"></rect>
-                <circle cx="12" cy="5" r="2"></circle>
-                <path d="M12 7v4"></path>
-                <line x1="8" y1="16" x2="8" y2="16"></line>
-                <line x1="16" y1="16" x2="16" y2="16"></line>
-              </svg>
-            </div>
+            <img src="public/img/img8.png" alt="AI検索対策" class="problem-card-img">
             <h3 class="paradigm-title">
               AI検索・対話型AI対策(AIO/AIEO)
             </h3>
@@ -449,9 +416,8 @@
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
             </svg>
             <p class="cms-placeholder-title">チャットUIでサイトを簡単更新</p>
-            <p class="cms-placeholder-text">
-              ※ チャットで指示するだけでデザインテーマ変更などが可能なイメージ画像が入ります
-            </p>
+
+            <img src="public/img/img9.jpg" alt="チャットUIでサイトを簡単更新" class="problem-card-img">
           </div>
         </div>
       </div>
@@ -777,7 +743,7 @@
         <!-- Brand -->
         <div class="footer-brand">
           <p class="footer-logo">
-            1WEEKHP<span class="logo-dot">.</span>
+            1WEEKWEB<span class="logo-dot">.</span>
           </p>
           <p class="footer-brand-text">
             ヒアリング1回で完成する、<br>
@@ -798,7 +764,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 1WEEKHP. All rights reserved.</p>
+        <p>&copy; 2026 1WEEKWEB. All rights reserved.</p>
       </div>
     </div>
   </footer>
