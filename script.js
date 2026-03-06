@@ -141,3 +141,25 @@ statItems.forEach((item, index) => {
   // Set first dot active on load
   if (sections.length) setActive(sections[0].id);
 })();
+
+// ============================================
+// To Top Button
+// ============================================
+(function () {
+  const btn = document.getElementById('toTopBtn');
+  const trigger = document.getElementById('problems');
+  if (!btn || !trigger) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      // problems section が画面上端より上へ出た（past）かどうか
+      if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
+        btn.classList.add('is-visible');
+      } else if (entry.isIntersecting || entry.boundingClientRect.top > 0) {
+        btn.classList.remove('is-visible');
+      }
+    });
+  }, { threshold: 0 });
+
+  observer.observe(trigger);
+})();
